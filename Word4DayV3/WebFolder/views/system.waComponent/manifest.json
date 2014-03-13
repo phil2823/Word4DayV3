@@ -1,0 +1,6 @@
+{
+    "name"    : "system",    
+    "html"    : "system.html",
+    "styles"  : [],
+    "scripts" : ["system.js"]
+}

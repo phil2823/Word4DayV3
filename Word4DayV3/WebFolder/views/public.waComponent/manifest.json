@@ -1,0 +1,6 @@
+{
+    "name"    : "public",    
+    "html"    : "public.html",
+    "styles"  : [],
+    "scripts" : ["public.js"]
+}

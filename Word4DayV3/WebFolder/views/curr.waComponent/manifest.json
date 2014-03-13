@@ -1,0 +1,6 @@
+{
+    "name"    : "curr",    
+    "html"    : "curr.html",
+    "styles"  : [],
+    "scripts" : ["curr.js"]
+}
