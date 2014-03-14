@@ -1,1 +1,890 @@
-﻿{	"toJSON": true,	"extraProperties": {		"version": "2",		"classes": {			"Students": {				"panelColor": "#B8CCE4",				"panel": {					"isOpen": "true",					"pathVisible": true,					"position": {						"X": 25,						"Y": 20					}				}			},			"WordGroup": {				"panelColor": "#996699",				"panel": {					"isOpen": "false",					"pathVisible": true,					"position": {						"X": 255,						"Y": 20					}				}			},			"WordGroups": {				"panelColor": "#B7DDE8",				"panel": {					"isOpen": "false",					"pathVisible": true,					"position": {						"X": 275,						"Y": 20					}				}			},			"SetsWordGroups": {				"panelColor": "#B8CCE4",				"panel": {					"isOpen": "true",					"pathVisible": true,					"position": {						"X": 816,						"Y": 24					}				}			},			"SetsWordCurr": {				"panelColor": "#B7DDE8",				"panel": {					"isOpen": "true",					"pathVisible": true,					"position": {						"X": 410,						"Y": 24					}				}			},			"SetsWordsOps": {				"panelColor": "#CCC1D9",				"panel": {					"isOpen": "true",					"pathVisible": true,					"position": {						"X": 29,						"Y": 391					}				}			},			"StudentsGroups": {				"panelColor": "#E5B9B7",				"panel": {					"isOpen": "true",					"pathVisible": true,					"position": {						"X": 385,						"Y": 395					}				}			},			"School": {				"panelColor": "#fff",				"panel": {					"isOpen": "true",					"position": {						"X": 306,						"Y": 691					},					"pathVisible": true				}			},			"User": {				"panelColor": "#D8D8D8",				"panel": {					"isOpen": "true",					"position": {						"X": 531,						"Y": 694					},					"pathVisible": true				}			}		},		"model": {			"scriptMode": "manual",			"workspaceLeft": 0,			"workspaceTop": 0		}	},	"dataClasses": [		{			"name": "DataClass2",			"className": "DataClass2",			"collectionName": "DataClass2Collection",			"scope": "public",			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "wordItem",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordUse",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordExample1",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordExample2",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordExample3",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordQuestion",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordAnswer1",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordAnswer2",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordAnswer3",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordAnswer4",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordAnswer5",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordRightAns",					"kind": "storage",					"scope": "public",					"type": "byte"				},				{					"name": "wordRightRem",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordWrongRem",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordPointsRight",					"kind": "storage",					"scope": "public",					"type": "byte"				},				{					"name": "wordPointsWrong",					"kind": "storage",					"scope": "public",					"type": "byte"				},				{					"name": "wordAudioEnabled",					"kind": "storage",					"scope": "public",					"type": "bool"				},				{					"name": "wordAudioURL",					"kind": "storage",					"scope": "public",					"type": "string"				}			]		},		{			"name": "SetsWordCurr",			"className": "SetsWordCurr",			"collectionName": "SetsWordCurrCollection",			"scope": "public",			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "curName",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "curKeyword",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "curShortCode",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "curAudioOption",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "curStrategy",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "curDays",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "curTimes",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "curWebOpt",					"kind": "storage",					"scope": "public",					"type": "bool"				},				{					"name": "curAdminOpt",					"kind": "storage",					"scope": "public",					"type": "bool"				},				{					"name": "curWordGroups",					"scope": "public",					"path": "SetsWordGroups",					"type": "SetsWordGroups",					"kind": "relatedEntity"				}			]		},		{			"name": "SetsWordGroups",			"className": "SetsWordGroups",			"collectionName": "SetsWordGroupsCollection",			"scope": "public",			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "wordsEntry",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordQuestion",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsExample1",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsExample2",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsExample3",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsAnswer1",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsAnswer2",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsAnswer3",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsAnswer4",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsAnswer5",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsRightAns",					"kind": "storage",					"scope": "public",					"type": "byte"				},				{					"name": "wordsRightMsg",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsWrongMsg",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsallowAudio",					"kind": "storage",					"scope": "public",					"type": "bool"				},				{					"name": "wordsBlank",					"kind": "storage",					"scope": "public",					"type": "bool"				},				{					"name": "wordsAudioURL",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "wordsRightScore",					"kind": "storage",					"scope": "public",					"type": "byte"				},				{					"name": "wordsWrongScore",					"kind": "storage",					"scope": "public",					"type": "byte"				},				{					"name": "wordsFlashTime",					"kind": "storage",					"scope": "public",					"type": "byte"				},				{					"name": "wordsActive",					"kind": "storage",					"scope": "public",					"type": "bool"				},				{					"name": "setsWordCurrCollection",					"scope": "public",					"reversePath": true,					"path": "curWordGroups",					"type": "SetsWordCurrCollection",					"kind": "relatedEntities"				}			]		},		{			"name": "SetsWordsOps",			"className": "SetsWordsOps",			"collectionName": "SetsWordsOpsCollection",			"scope": "public",			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "opsDate",					"kind": "storage",					"scope": "public",					"type": "date",					"simpleDate": false				},				{					"name": "opsMsgSent",					"kind": "storage",					"scope": "public",					"type": "number"				},				{					"name": "opsMsgRec",					"kind": "storage",					"scope": "public",					"type": "number"				},				{					"name": "opsWordsSent",					"kind": "storage",					"scope": "public",					"type": "number"				},				{					"name": "opsStudentsSent",					"kind": "storage",					"scope": "public",					"type": "number"				},				{					"name": "opsStudentsinCur",					"kind": "storage",					"scope": "public",					"type": "number"				}			]		},		{			"name": "Students",			"className": "Students",			"collectionName": "StudentsCollection",			"scope": "public",			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "smsNumber",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "real_Name",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "login_Name",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "password",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "allowAudio",					"kind": "storage",					"scope": "public",					"type": "bool"				},				{					"name": "tzOffsetmin",					"kind": "storage",					"scope": "public",					"type": "number"				},				{					"name": "stuDays",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "stuTimes",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "stuScore",					"kind": "storage",					"scope": "public",					"type": "number"				},				{					"name": "stuWordCnt",					"kind": "storage",					"scope": "public",					"type": "number"				},				{					"name": "stuGroups",					"scope": "public",					"path": "StudentsGroups",					"type": "StudentsGroups",					"kind": "relatedEntity"				}			]		},		{			"name": "StudentsGroups",			"className": "StudentsGroups",			"collectionName": "StudentsGroupsCollection",			"scope": "public",			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "groupName",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "groupDesc",					"kind": "storage",					"scope": "public",					"type": "string"				},				{					"name": "studentsCollection",					"scope": "public",					"reversePath": true,					"path": "stuGroups",					"type": "StudentsCollection",					"kind": "relatedEntities"				}			]		},		{			"name": "WordGroup",			"className": "WordGroup",			"collectionName": "WordGroupCollection",			"scope": "public",			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"unique": true,					"autosequence": true,					"type": "long"				},				{					"name": "word",					"kind": "storage",					"scope": "public",					"unique": true,					"type": "string",					"primKey": true				}			]		},		{			"name": "WordGroups",			"className": "WordGroups",			"collectionName": "WordGroupsCollection",			"scope": "public",			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "wordItem",					"kind": "storage",					"scope": "public",					"type": "string"				}			]		},		{			"collectionName": "SchoolCollection",			"className": "School",			"attributes": [				{					"name": "ID",					"kind": "storage",					"type": "long",					"autosequence": "true",					"unique": "true",					"primKey": "true"				},				{					"name": "Name",					"scope": "public",					"type": "string",					"kind": "storage"				},				{					"name": "user",					"scope": "public",					"path": "User",					"type": "User",					"kind": "relatedEntity"				}			]		},		{			"collectionName": "UserCollection",			"className": "User",			"attributes": [				{					"name": "ID",					"kind": "storage",					"type": "long",					"autosequence": "true",					"unique": "true",					"primKey": "true"				},				{					"name": "userLogin",					"scope": "public",					"type": "string",					"kind": "storage"				},				{					"name": "userPwd",					"scope": "public",					"type": "string",					"kind": "storage"				},				{					"name": "userEmail",					"scope": "public",					"type": "string",					"kind": "storage"				},				{					"name": "isAztec",					"scope": "public",					"type": "bool",					"kind": "storage"				},				{					"name": "schoolCollection",					"scope": "public",					"reversePath": true,					"path": "user",					"type": "SchoolCollection",					"kind": "relatedEntities"				}			]		}	],	"type": []}
+
+{
+	"toJSON" : true,
+	"extraProperties" : 
+	{
+		"version" : "2",
+		"classes" : 
+		{
+			"Students" : 
+			{
+				"panelColor" : "#B8CCE4",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 25,
+						"Y" : 20
+					}
+				}
+			},
+			"WordGroup" : 
+			{
+				"panelColor" : "#996699",
+				"panel" : 
+				{
+					"isOpen" : "false",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 255,
+						"Y" : 20
+					}
+				}
+			},
+			"WordGroups" : 
+			{
+				"panelColor" : "#B7DDE8",
+				"panel" : 
+				{
+					"isOpen" : "false",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 275,
+						"Y" : 20
+					}
+				}
+			},
+			"SetsWordGroups" : 
+			{
+				"panelColor" : "#B8CCE4",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 816,
+						"Y" : 24
+					}
+				}
+			},
+			"SetsWordCurr" : 
+			{
+				"panelColor" : "#B7DDE8",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 410,
+						"Y" : 24
+					}
+				}
+			},
+			"SetsWordsOps" : 
+			{
+				"panelColor" : "#CCC1D9",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 48,
+						"Y" : 421
+					}
+				}
+			},
+			"StudentsGroups" : 
+			{
+				"panelColor" : "#E5B9B7",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 385,
+						"Y" : 395
+					}
+				}
+			},
+			"School" : 
+			{
+				"panelColor" : "#fff",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 306,
+						"Y" : 691
+					}
+				}
+			},
+			"User" : 
+			{
+				"panelColor" : "#D8D8D8",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 714,
+						"Y" : 698
+					}
+				}
+			}
+		},
+		"model" : 
+		{
+			"scriptMode" : "manual",
+			"workspaceLeft" : 308,
+			"workspaceTop" : 239
+		}
+	},
+	"dataClasses" : 
+	[
+		{
+			"name" : "DataClass2",
+			"className" : "DataClass2",
+			"collectionName" : "DataClass2Collection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "wordItem",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordUse",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordExample1",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordExample2",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordExample3",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordQuestion",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordAnswer1",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordAnswer2",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordAnswer3",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordAnswer4",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordAnswer5",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordRightAns",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "byte"
+				},
+				{
+					"name" : "wordRightRem",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordWrongRem",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordPointsRight",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "byte"
+				},
+				{
+					"name" : "wordPointsWrong",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "byte"
+				},
+				{
+					"name" : "wordAudioEnabled",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
+				},
+				{
+					"name" : "wordAudioURL",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "School",
+			"className" : "School",
+			"collectionName" : "SchoolCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "Name",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "user",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "User",
+					"path" : "User"
+				},
+				{
+					"name" : "studentsCollection",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "StudentsCollection",
+					"reversePath" : true,
+					"path" : "stuSchool"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "SetsWordCurr",
+			"className" : "SetsWordCurr",
+			"collectionName" : "SetsWordCurrCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "curName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "curKeyword",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "curShortCode",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "curAudioOption",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "curStrategy",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "curDays",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "curTimes",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "curWebOpt",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
+				},
+				{
+					"name" : "curAdminOpt",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
+				},
+				{
+					"name" : "curWordGroups",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "SetsWordGroups",
+					"path" : "SetsWordGroups"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "SetsWordGroups",
+			"className" : "SetsWordGroups",
+			"collectionName" : "SetsWordGroupsCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "wordsEntry",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordQuestion",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsExample1",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsExample2",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsExample3",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsAnswer1",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsAnswer2",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsAnswer3",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsAnswer4",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsAnswer5",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsRightAns",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "byte"
+				},
+				{
+					"name" : "wordsRightMsg",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsWrongMsg",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsallowAudio",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
+				},
+				{
+					"name" : "wordsBlank",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
+				},
+				{
+					"name" : "wordsAudioURL",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "wordsRightScore",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "byte"
+				},
+				{
+					"name" : "wordsWrongScore",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "byte"
+				},
+				{
+					"name" : "wordsFlashTime",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "byte"
+				},
+				{
+					"name" : "wordsActive",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
+				},
+				{
+					"name" : "setsWordCurrCollection",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "SetsWordCurrCollection",
+					"reversePath" : true,
+					"path" : "curWordGroups"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "SetsWordsOps",
+			"className" : "SetsWordsOps",
+			"collectionName" : "SetsWordsOpsCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "opsDate",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false
+				},
+				{
+					"name" : "opsMsgSent",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "opsMsgRec",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "opsWordsSent",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "opsStudentsSent",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "opsStudentsinCur",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Students",
+			"className" : "Students",
+			"collectionName" : "StudentsCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "smsNumber",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "real_Name",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "login_Name",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "password",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "allowAudio",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
+				},
+				{
+					"name" : "tzOffsetmin",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "stuDays",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "stuTimes",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "stuScore",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "stuWordCnt",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "stuGroups",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "StudentsGroups",
+					"path" : "StudentsGroups"
+				},
+				{
+					"name" : "stuSchool",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "School",
+					"path" : "School"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "StudentsGroups",
+			"className" : "StudentsGroups",
+			"collectionName" : "StudentsGroupsCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "groupName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "groupDesc",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "studentsCollection",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "StudentsCollection",
+					"reversePath" : true,
+					"path" : "stuGroups"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "User",
+			"className" : "User",
+			"collectionName" : "UserCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "userLogin",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "userPwd",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "userEmail",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "isAztec",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
+				},
+				{
+					"name" : "schoolCollection",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "SchoolCollection",
+					"reversePath" : true,
+					"path" : "user"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "WordGroup",
+			"className" : "WordGroup",
+			"collectionName" : "WordGroupCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long"
+				},
+				{
+					"name" : "word",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"type" : "string",
+					"indexKind" : "btree"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "word"
+				}
+			]
+		},
+		{
+			"name" : "WordGroups",
+			"className" : "WordGroups",
+			"collectionName" : "WordGroupsCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "wordItem",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		}
+	]
+}
